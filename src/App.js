@@ -4,12 +4,14 @@ import Flight from "./pages/Flight";
 import Home from "./pages/Home";
 import Hotel from "./pages/Hotel";
 import Error from './pages/Error';
+import Forex from "./Components/Forex";
 
 function App() {
   return (
     <div className="App">
       <Router>
       <Navbar/>
+      <Forex/>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/flights' element={<Flight/>}/>
